@@ -1,0 +1,179 @@
+html{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav bar */
+
+.navi {
+  position: fixed;
+}
+
+#navbar ul {
+   float: right;
+   padding-right: 25px;
+}
+
+#navbar li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+  border: outset;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Welcome section */
+
+#welcome-section {
+  min-height: 55vh;
+  padding-top: 45vh;
+  background: url("theWorldInMyHand.jpeg");
+  background-position: center;
+  background-size: 100% ;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+/* project section */
+
+#projects {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+
+  text-align: center;
+  background-image: url("map.jpg");
+  min-height: 1110px;
+  align-content: center;
+  /* grid-gap: 100px; */
+}
+
+.project-tile {
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+.projectBTN {
+  border: outset;
+  background-color: burlywood;
+  color: black;
+  width: 50%;
+  display: inline-block
+}
+
+
+
+/* Connect with me */
+
+#connect {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url("connect.jpg");
+  height: 787px;
+  background-position: center;
+}
+
+.connection {
+  font-weight: bold;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  display: inline-block;
+  line-height: 105px;
+  color: white;
+  margin: 10px;
+}
+
+#twitter {
+  background-image: url("twitter3.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
+#linkedin {
+  background-image: url("linkedin.png");
+  background-position: center;
+  background-size: 100%;
+}
+
+#facebook {
+  background-image: url("fb.png");
+  background-position: center;
+  background-size: 100%;
+}
+
+#github {
+  background-image: url("github1.png");
+  background-position: center;
+  background-size: 100%;
+}
+
+#profile-link {
+  background-image: url("fcc.png");
+  background-position: center;
+  background-size: 100%;
+}
+
+#email {
+  background-image: url("email.png");
+  background-position: center;
+  background-size: 100%;
+}
+
+#codepen {
+  background-image: url("codepen.png");
+  background-position: center;
+  background-size: 100%;
+}
+
+.linktext {
+ opacity: 0;
+}
+
+.linktext:hover {
+  background: blue;
+  border-radius: 100%;
+  opacity: 1;
+  width: 110px;
+  height: 110px;
+}
+
+
+@media only screen and (max-width: 600px){
+  .navi{
+    position: absolute;
+  }
+}
